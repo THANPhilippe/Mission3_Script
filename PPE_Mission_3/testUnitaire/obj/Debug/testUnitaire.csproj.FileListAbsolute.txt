@@ -1,0 +1,11 @@
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\bin\Debug\testUnitaire.dll
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\bin\Debug\testUnitaire.pdb
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\bin\Debug\PPE_Mission_3.exe
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\bin\Debug\MySql.Data.dll
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\bin\Debug\PPE_Mission_3.pdb
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\bin\Debug\MySql.Data.xml
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\bin\Debug\fr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\obj\Debug\testUnitaire.csprojResolveAssemblyReference.cache
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\obj\Debug\testUnitaire.dll
+C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\testUnitaire\obj\Debug\testUnitaire.pdb

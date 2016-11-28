@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PPE_Mission_3
 {
-    class GestionDate
+    public class GestionDate
     {
         public string getMoisCourant()
         {
