@@ -20,19 +20,20 @@ namespace PPE_Mission_3
         public Form1()
         {
             InitializeComponent();
-            test();
+
         }
 
         public void test()
         {
-            /*
-
+            String date = gd.getAnneeMoisPrecedent();
 
             // Ouverture de la connexion
             SqlCo.Open();
 
             // Instanciation de l’objet Command
             MySqlCommand SqlCom = new MySqlCommand("Select * from fichefrais where mois= '"+date+"'", SqlCo);
+
+            MySqlDataReader reader = SqlCom.ExecuteReader();
 
             dt = new DataTable();
             dt.Columns.Add(reader.GetName(0));
@@ -56,7 +57,6 @@ namespace PPE_Mission_3
                 dt.Rows.Add(dr);
             }
             datagrid.DataSource = dt;
-                    */
         }
 
 
@@ -64,22 +64,7 @@ namespace PPE_Mission_3
         {
 
 
-            if (GestionDate.verifIntervalle(1,10))
-            {
-                String date = gd.getAnneeMoisPrecedent();
-                MySqlCommand SqlCom = new MySqlCommand("Update fichefrais set idEtat='CL' where mois= '" + date + "'", SqlCo);
-                MySqlDataReader reader = SqlCom.ExecuteReader();
 
-            }
-
-            if (GestionDate.majFicheMoisPrecedent())
-            {
-                String date = gd.getAnneeMoisPrecedent();
-                MySqlCommand SqlCom = new MySqlCommand("Update fichefrais set idEtat='RB' where mois= '" + date + "' and idEtat='VA'", SqlCo);
-                MySqlDataReader reader = SqlCom.ExecuteReader();
-            }
-
-            SqlCo.Close();
 
         }
     }
