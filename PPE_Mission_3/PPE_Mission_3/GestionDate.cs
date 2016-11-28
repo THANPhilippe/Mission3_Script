@@ -8,6 +8,29 @@ namespace PPE_Mission_3
 {
     class GestionDate
     {
+        public string getMoisCourant()
+        {
+            DateTime date = DateTime.Now;
+            int mois = date.Month;
+            return (mois.ToString());
+
+        }
+
+        public string getMoisPrecedent()
+        {
+            DateTime date = DateTime.Now.AddMonths(-1);
+            int mois = date.Month;
+            return (mois.ToString());
+
+        }
+
+        public string getMoisSuivant()
+        {
+            DateTime date = DateTime.Now.AddMonths(1);
+            int mois = date.Month;
+            return (mois.ToString());
+
+        }
 
     }
 }
