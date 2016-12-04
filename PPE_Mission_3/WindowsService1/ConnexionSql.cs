@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PPE_Mission_3
+namespace WindowsService1
 {
     class ConnexionSql
     {

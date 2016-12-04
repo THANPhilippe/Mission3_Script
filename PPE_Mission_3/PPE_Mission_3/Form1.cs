@@ -13,9 +13,11 @@ namespace PPE_Mission_3
 {
     public partial class Form1 : Form
     {
-        private MySqlConnection SqlCo = ConnexionSql.getInstance("SERVER = 127.0.0.1; DATABASE=pthan;UID=root;PASSWORD=");
+
+        private MySqlConnection SqlCo = ConnexionSql.getInstance("127.0.0.1","pthan","root","");
         GestionDate gd = new GestionDate();
         private DataTable dt;
+        private string date = "201610";
 
         public Form1()
         {
@@ -25,14 +27,15 @@ namespace PPE_Mission_3
 
         public void test()
         {
-            /*
-
 
             // Ouverture de la connexion
             SqlCo.Open();
 
             // Instanciation de l’objet Command
             MySqlCommand SqlCom = new MySqlCommand("Select * from fichefrais where mois= '"+date+"'", SqlCo);
+
+            // Instanciation de l’objet Command
+            MySqlDataReader reader = SqlCom.ExecuteReader();
 
             dt = new DataTable();
             dt.Columns.Add(reader.GetName(0));
@@ -56,9 +59,8 @@ namespace PPE_Mission_3
                 dt.Rows.Add(dr);
             }
             datagrid.DataSource = dt;
-                    */
+            SqlCo.Close();
         }
-
 
         private void timer1_Tick(object sender, EventArgs e)
         {

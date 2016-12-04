@@ -9,3 +9,14 @@ C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\obj\Debu
 C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\obj\Debug\PPE_Mission_3.csproj.GenerateResource.Cache
 C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\obj\Debug\PPE_Mission_3.exe
 C:\Users\admin\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\obj\Debug\PPE_Mission_3.pdb
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\bin\Debug\PPE_Mission_3.exe.config
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\obj\Debug\PPE_Mission_3.exe
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\obj\Debug\PPE_Mission_3.pdb
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\obj\Debug\PPE_Mission_3.csprojResolveAssemblyReference.cache
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\obj\Debug\PPE_Mission_3.Form1.resources
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\obj\Debug\PPE_Mission_3.Properties.Resources.resources
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\obj\Debug\PPE_Mission_3.csproj.GenerateResource.Cache
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\bin\Debug\PPE_Mission_3.exe
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\bin\Debug\PPE_Mission_3.pdb
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\bin\Debug\MySql.Data.dll
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\bin\Debug\MySql.Data.xml
