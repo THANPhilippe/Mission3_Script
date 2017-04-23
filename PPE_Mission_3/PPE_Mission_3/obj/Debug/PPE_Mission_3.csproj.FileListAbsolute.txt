@@ -20,3 +20,4 @@ C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\bin\Debu
 C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\bin\Debug\PPE_Mission_3.pdb
 C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\bin\Debug\MySql.Data.dll
 C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\bin\Debug\MySql.Data.xml
+C:\Users\phili\Source\Repos\Mission3_Script\PPE_Mission_3\PPE_Mission_3\bin\Debug\PPE_Mission_3.XML

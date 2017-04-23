@@ -36,7 +36,8 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 30000;
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // datagrid
@@ -45,14 +46,14 @@
             this.datagrid.Location = new System.Drawing.Point(30, 22);
             this.datagrid.Name = "datagrid";
             this.datagrid.RowTemplate.Height = 24;
-            this.datagrid.Size = new System.Drawing.Size(240, 150);
+            this.datagrid.Size = new System.Drawing.Size(412, 150);
             this.datagrid.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.ClientSize = new System.Drawing.Size(468, 253);
             this.Controls.Add(this.datagrid);
             this.Name = "Form1";
             this.Text = "Form1";

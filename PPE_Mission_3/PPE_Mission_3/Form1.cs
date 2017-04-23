@@ -14,7 +14,8 @@ namespace PPE_Mission_3
     public partial class Form1 : Form
     {
 
-        private MySqlConnection SqlCo = ConnexionSql.getInstance("127.0.0.1","pthan","root","");
+        //private MySqlConnection SqlCo = ConnexionSql.getInstance("127.0.0.1","pthan","root","");
+        private MySqlConnection SqlCo = ConnexionSql.getInstance("138.231.160.7", "pthan","pthan", "Ti8eitho");
         GestionDate gd = new GestionDate();
         private DataTable dt;
         private string date = "201610";
@@ -32,7 +33,7 @@ namespace PPE_Mission_3
             SqlCo.Open();
 
             // Instanciation de l’objet Command
-            MySqlCommand SqlCom = new MySqlCommand("Select * from fichefrais where mois= '"+date+"'", SqlCo);
+            MySqlCommand SqlCom = new MySqlCommand("Select * from fichefrais where mois= '201611'", SqlCo);
 
             // Instanciation de l’objet Command
             MySqlDataReader reader = SqlCom.ExecuteReader();
@@ -64,7 +65,7 @@ namespace PPE_Mission_3
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            SqlCo.Open();
 
             if (GestionDate.verifIntervalle(1, 10))
             {
