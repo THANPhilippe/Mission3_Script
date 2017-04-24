@@ -31,7 +31,7 @@ namespace WindowsService1
         public string getAnneeMoisPrecedent()
         {
             DateTime date = DateTime.Now.AddMonths(-1);
-            String mois = (date.Month).ToString();
+            String mois = (date.Month).ToString().PadLeft(2, '0');
             String annee = (date.Year).ToString();
             return (annee + mois);
 

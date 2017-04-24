@@ -15,7 +15,8 @@ namespace WindowsService1
     public partial class WindowsService1 : ServiceBase
     {
         private Timer timer = null;
-        private MySqlConnection SqlCo = ConnexionSql.getInstance("127.0.0.1", "pthan", "root", "");
+        //private MySqlConnection SqlCo = ConnexionSql.getInstance("127.0.0.1", "pthan", "root", "");
+        private MySqlConnection SqlCo = ConnexionSql.getInstance("138.231.160.7", "pthan", "pthan", "Ti8eitho");
         GestionDate gd = new GestionDate();
 
         public WindowsService1()

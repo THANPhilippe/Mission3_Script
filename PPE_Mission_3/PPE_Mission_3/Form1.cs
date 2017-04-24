@@ -23,7 +23,6 @@ namespace PPE_Mission_3
         public Form1()
         {
             InitializeComponent();
-            test();
         }
 
         public void test()
@@ -33,7 +32,7 @@ namespace PPE_Mission_3
             SqlCo.Open();
 
             // Instanciation de l’objet Command
-            MySqlCommand SqlCom = new MySqlCommand("Select * from fichefrais where mois= '201611'", SqlCo);
+            MySqlCommand SqlCom = new MySqlCommand("Select * from fichefrais where mois= '201703'", SqlCo);
 
             // Instanciation de l’objet Command
             MySqlDataReader reader = SqlCom.ExecuteReader();
@@ -84,6 +83,13 @@ namespace PPE_Mission_3
 
             SqlCo.Close();
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Interval = 5000;
+            test();
+            timer1.Start();
         }
     }
 }

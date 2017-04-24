@@ -46,17 +46,18 @@
             this.datagrid.Location = new System.Drawing.Point(30, 22);
             this.datagrid.Name = "datagrid";
             this.datagrid.RowTemplate.Height = 24;
-            this.datagrid.Size = new System.Drawing.Size(412, 150);
+            this.datagrid.Size = new System.Drawing.Size(792, 201);
             this.datagrid.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 253);
+            this.ClientSize = new System.Drawing.Size(856, 398);
             this.Controls.Add(this.datagrid);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
             this.ResumeLayout(false);
 
