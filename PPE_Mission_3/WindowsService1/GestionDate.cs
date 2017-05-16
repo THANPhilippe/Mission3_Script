@@ -19,7 +19,7 @@ namespace WindowsService1
         public string getMoisCourant()
         {
             DateTime date = DateTime.Now;
-            int mois = date.Month;
+            String mois = (date.Month).ToString().PadLeft(2, '0');
             return (mois.ToString());
 
         }
@@ -44,8 +44,8 @@ namespace WindowsService1
         public string getMoisSuivant()
         {
             DateTime date = DateTime.Now.AddMonths(1);
-            int mois = date.Month;
-            return (mois.ToString());
+            String mois = (date.Month).ToString().PadLeft(2, '0');
+            return (mois);
 
         }
 

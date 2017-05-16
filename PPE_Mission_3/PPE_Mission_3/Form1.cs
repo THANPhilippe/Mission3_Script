@@ -18,7 +18,6 @@ namespace PPE_Mission_3
         private MySqlConnection SqlCo = ConnexionSql.getInstance("138.231.160.7", "pthan","pthan", "Ti8eitho");
         GestionDate gd = new GestionDate();
         private DataTable dt;
-        private string date = "201610";
 
         public Form1()
         {
@@ -28,11 +27,22 @@ namespace PPE_Mission_3
         public void test()
         {
 
+            String date = gd.getAnneeMoisPrecedent();
             // Ouverture de la connexion
             SqlCo.Open();
 
+
             // Instanciation de l’objet Command
-            MySqlCommand SqlCom = new MySqlCommand("Select * from fichefrais where mois= '201703'", SqlCo);
+            MySqlCommand SqlCom = new MySqlCommand("Select * from fichefrais where mois= '" + date + "'", SqlCo);
+
+            if (GestionDate.majFicheMoisPrecedent())
+            {
+                SqlCom = new MySqlCommand("Select * from fichefrais where mois= '" + date + "' and idEtat = 'VA'", SqlCo);
+            }
+            if(GestionDate.verifIntervalle(1, 10))
+            {
+                SqlCom = new MySqlCommand("Select * from fichefrais where mois= '" + date + "' and idEtat != 'CL'", SqlCo);
+            }
 
             // Instanciation de l’objet Command
             MySqlDataReader reader = SqlCom.ExecuteReader();
@@ -69,6 +79,17 @@ namespace PPE_Mission_3
             if (GestionDate.verifIntervalle(1, 10))
             {
                 String date = gd.getAnneeMoisPrecedent();
+
+                MySqlCommand count = new MySqlCommand("select count(*) from fichefrais where mois= '" + date + "' and idEtat != 'CL'", SqlCo);
+                MySqlDataReader countReader = count.ExecuteReader();
+                while (countReader.Read() && countReader.GetInt16(0) > 0)
+                {
+                    MessageBox.Show("Nb de fiches mises en CL: " + countReader.GetString(0));
+                }
+
+                SqlCo.Close();
+                SqlCo.Open();
+
                 MySqlCommand SqlCom = new MySqlCommand("Update fichefrais set idEtat='CL' where mois= '" + date + "'", SqlCo);
                 MySqlDataReader reader = SqlCom.ExecuteReader();
 
@@ -77,6 +98,17 @@ namespace PPE_Mission_3
             if (GestionDate.majFicheMoisPrecedent())
             {
                 String date = gd.getAnneeMoisPrecedent();
+
+                MySqlCommand count = new MySqlCommand("select count(*) from fichefrais where mois= '" + date + "' and idEtat = 'VA'", SqlCo);
+                MySqlDataReader countReader = count.ExecuteReader();
+                while (countReader.Read() && countReader.GetInt16(0) > 0)
+                {
+                    MessageBox.Show("Nb de fiches mises en RB: "+countReader.GetString(0));
+                }
+
+                SqlCo.Close();
+                SqlCo.Open();
+
                 MySqlCommand SqlCom = new MySqlCommand("Update fichefrais set idEtat='RB' where mois= '" + date + "' and idEtat='VA'", SqlCo);
                 MySqlDataReader reader = SqlCom.ExecuteReader();
             }
